@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NavBase</string>
+    <string name="open">Opened</string>
+    <string name="close">Closed</string>
+</resources>

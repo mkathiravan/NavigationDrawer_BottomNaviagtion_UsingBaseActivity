@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:id="@+id/Flayout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNav"
+                app:labelVisibilityMode="labeled"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:layout_alignParentBottom="true"
+                android:fitsSystemWindows="true"
+                app:elevation="0dp"
+                app:itemTextColor="@drawable/bottom_navigation_selector"
+                app:itemIconSize="25dp"
+                app:menu="@menu/bottom_nav_menu"
+                app:itemHorizontalTranslationEnabled="false"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:backgroundTint="@color/alert"
+        android:visibility="visible"
+        app:srcCompat="@drawable/sos_icon"
+        android:scaleType="center"
+        app:fabSize="normal"
+        app:maxImageSize="56dp"
+        app:layout_anchor="@id/Flayout"
+        app:layout_anchorGravity="top|center_horizontal"
+        app:rippleColor="@color/white"
+        tools:ignore="VectorDrawableCompat" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

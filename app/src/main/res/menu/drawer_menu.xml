@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Home" />
+        <item
+            android:id="@+id/page1"
+            android:icon="@drawable/ic_launcher_background"
+            app:actionViewClass="android.widget.TextView"
+            android:title="Page 1" />
+
+        <item
+            android:id="@+id/page2"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Page 2" />
+        <item
+            android:id="@+id/page3"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Page 3" />
+
+        <item
+            android:id="@+id/page4"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Page 4" />
+
+
+    </group>
+
+</menu>
